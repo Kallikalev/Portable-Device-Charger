@@ -229,7 +229,7 @@ while True:
 			print("Please remove your surface from drawer number " + str(drawerToUnlock + 1) + ".")
 			sleep(2)
 		clear()
-	elif action[:7] == "barcode":
+	elif len(action) == 10:
 		drawerToClose = None
 		for i in range(len(drawers)):
 			if drawers[i][1] == False:
@@ -291,3 +291,5 @@ add: requests to put a surface in a cabinet
 remove: requests to remove a surface from a cabinet
 barcode: simulate the scanning of a barcode
 '''
+
+
